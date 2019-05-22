@@ -32,8 +32,8 @@ Include docker file in your solution (for web application). You can help us to b
 
 ### Requires
 
-Php 7.2
-Server
-Sass:
+Php 7.2+  
+Server 
+Sass: 
 `npm install -g sass`
 
