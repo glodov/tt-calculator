@@ -34,6 +34,7 @@ Include docker file in your solution (for web application). You can help us to b
 
 Php 7.2+  
 Server  
-Sass:  
-`npm install -g sass`
+Sass: `npm install -g sass`  
+Pug: `npm install -g pug-cli`  
+
 
