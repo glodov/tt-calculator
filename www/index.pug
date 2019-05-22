@@ -2,7 +2,6 @@ doctype html
 html(lang="en")
   head
     title Calculator online
-    script(type='text/javascript', src='js/all.js')
     link(rel='stylesheet', href='css/all.css')
 
   body
@@ -10,6 +9,7 @@ html(lang="en")
     #calc.calc
       #display.display
         #display-prev.prev
+        #display-operator.operator
         #display-now.current 0
       #buttons.buttons
         button.action.specific(data-value='C') C
@@ -30,3 +30,6 @@ html(lang="en")
         button.action(data-value='+') +
         button.xl(data-value='0') 0
         button.action(data-value='=') =
+
+    //- scripts
+    script(type='text/javascript', src='js/all.js')

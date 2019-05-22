@@ -15,13 +15,21 @@ body {
 
 .display {
   padding: 8px;
+  font-family: "Courier", monospace;
   text-align: right;
   color: #fff;
   background-color: #444;
 }
-.display .prev {
-  height: 5rem;
+.display > * {
+  margin-top: 0.5rem;
   overflow: hidden;
+}
+.display .prev {
+  height: 1rem;
+}
+.display .operator {
+  height: 2rem;
+  font-size: 2rem;
 }
 .display .current {
   margin-top: 1rem;

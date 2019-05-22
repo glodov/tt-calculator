@@ -57,9 +57,24 @@ class Calculator
         // defining default values
         $this->result = false;
         $this->error  = false;
-        $this->input  = $input;
+        $this->input  = trim($input);
 
-        $input = $this->input($input);
+        $input = $this->input($this->input);
+
+        // handle error Divison by ZERO
+        // try/catch does not work
+        // phpcs:ignore
+        set_error_handler(function ($no, $str, $file, $context) {
+            $name = preg_quote(__FILE__, '/');
+            $expr = "/^" . $name . "\(.+: eval\(\)\'d code$/";
+            $eval = preg_match($expr, $file);
+            if ($eval) {
+                $this->error = $context;
+            } else {
+                throw new \Exception($str);
+            }
+        // phpcs:ignore
+        });
 
         if ('' === $input) {
             $this->result = true;
@@ -71,6 +86,8 @@ class Calculator
             $input = 'return ' . $input . ';';
             $this->result = eval($input);
         } catch (\ParseError $e) {
+            $this->error = $e->getMessage();
+        } catch (\Exception $e) {
             $this->error = $e->getMessage();
         }
         return $this->result;
