@@ -22,10 +22,18 @@ Include docker file in your solution (for web application). You can help us to b
 2. Clone it.
 3. Create a basic application.
    - test * unit test
-4. Create an API.
-5. Create a CLI interface. #1
+4. Create a CLI interface. #1
    - test
+5. Create an API.
 6. Create a Web interface. #2
    - test
 7. Create a Docker config. #3
    - test
+
+### Requires
+
+Php 7.2
+Server
+Sass:
+`npm install -g sass`
+
