@@ -12,3 +12,20 @@ Implement web application that exposes UI mimicking a calculator (similar to cal
 
 ### Extras (optional) 
 Include docker file in your solution (for web application). You can help us to better understand how you approach complex tasks by sending us a git repository containing all intermediate commits you made while working on this task. 
+
+
+## Solution
+
+### Steps to do tasks:
+
+1. Create a git reposity.
+2. Clone it.
+3. Create a basic application.
+   - test * unit test
+4. Create an API.
+5. Create a CLI interface. #1
+   - test
+6. Create a Web interface. #2
+   - test
+7. Create a Docker config. #3
+   - test
