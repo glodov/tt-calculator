@@ -56,13 +56,14 @@ const onPad = (el) => {
 			calc.current = "" + calc.current + value;
 		}
 	}
-	if (keys.operators.indexOf(value) > -1) {
+	if ("=" === value || keys.operators.indexOf(value) > -1) {
+		if ("=" === value) {
+			calc.operator = "+";
+		} else {
+			calc.operator = value;
+		}
 		calc.prev = "" + calc.prev + " " + calc.operator + " " + calc.current;
-		calc.operator = value;
 		calc.current = "0";
-		calculate();
-	}
-	if ("=" === value) {
 		calculate();
 	}
 	if ("N" === value) {

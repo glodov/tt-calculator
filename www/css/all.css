@@ -37,16 +37,18 @@ body {
 }
 
 .calc .buttons button {
-  margin: 2px;
-  width: 76px;
+  margin: 0.5px;
+  width: 79px;
   height: 40px;
+  color: #fff;
   font-size: 1.75rem;
+  border: none;
+  background-color: #444;
 }
 .calc .buttons button.xl {
-  width: 236px;
+  width: 239px;
 }
 .calc .buttons button.action {
-  color: white;
   background-color: orange;
 }
 .calc .buttons button.specific {
