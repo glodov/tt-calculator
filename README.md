@@ -30,6 +30,13 @@ Include docker file in your solution (for web application). You can help us to b
 7. Create a Docker config. #3
    - test
 
+### Docker config
+
+1. Build docker: `docker build -t calculator .`
+2. Run docker: `docker run -p 8080:80 -d calculator`
+3. Check container id: `docker ps`
+4. Access application from browser: [localhost:8080](http://localhost:8080)
+
 ### Requires
 
 Php 7.2+  
