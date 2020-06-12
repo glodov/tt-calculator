@@ -1,0 +1,11 @@
+{
+    "autoload": {
+        "psr-4": {
+            "TT\\": "app/TT/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.2"
+    }
+}

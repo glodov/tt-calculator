@@ -2,22 +2,22 @@
 /**
  * Calculator class with it's logic.
  *
- * Php Version 7.2
+ * PHP Version 7.4
  *
  * @category Application
  * @package  Core
- * @author   Yaro <glodov@gmail.com>
+ * @author   Yaro <i@yaro.info>
  * @license  https://opensource.org/licenses/MIT MIT
  * @link     https://github.com/glodov/tt-calculator
  */
-namespace TTCalendar\Calc;
+namespace TT\Calculator;
 
 /**
  * Calculator class with it's logic.
  *
  * @category Application
  * @package  Core
- * @author   Yaro <glodov@gmail.com>
+ * @author   Yaro <i@yaro.info>
  * @license  https://opensource.org/licenses/MIT MIT
  * @link     https://github.com/glodov/tt-calculator
  */
@@ -145,6 +145,18 @@ class Calculator
         $result = array_key_exists($name, $this->vars);
         $this->vars[$name] = $value;
         return $result;
+    }
+    
+    /**
+     * Sets the current value of the calculator.
+     *
+     * @param mixed $value The input value.
+     * 
+     * @return void
+     */
+    public function set(int $value)
+    {
+        $this->result = $value;
     }
 
     /**

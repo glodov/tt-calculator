@@ -13,6 +13,13 @@ Implement web application that exposes UI mimicking a calculator (similar to cal
 ### Extras (optional) 
 Include docker file in your solution (for web application). You can help us to better understand how you approach complex tasks by sending us a git repository containing all intermediate commits you made while working on this task. 
 
+## DDD tasks
+
+### Interfaces
+Add interfaces into the project.
+
+### Unit tests with PHPUnit
+Add unit tests with PHPUnit 9.2+ into the project.
 
 ## Solution
 
@@ -30,6 +37,13 @@ Include docker file in your solution (for web application). You can help us to b
 7. Create a Docker config. #3
    - test
 
+### Steps to do (2nd stage) tasks
+
+1. Add `CalculatorInterface`
+2. Add new classes impletented the Interface
+3. Add PHPUnit tests
+   - Run tests with command `php ./vendor/phpunit/phpunit/phpunit`
+
 ### Docker config
 
 1. Build docker: `docker build -t calculator .`
@@ -39,9 +53,7 @@ Include docker file in your solution (for web application). You can help us to b
 
 ### Requires
 
-Php 7.2+  
+Php 7.4+  
 Server  
 Sass: `npm install -g sass`  
 Pug: `npm install -g pug-cli`  
-
-
